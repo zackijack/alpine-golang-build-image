@@ -1,11 +1,11 @@
-FROM alpine:3.8
+FROM alpine:3.9
 
-ARG VERSION=1.10.3
-ARG CHECKSUM=567b1cc66c9704d1c019c50bef946272e911ec6baf244310f87f4e678be155f2
+ARG VERSION=1.11.6
+ARG CHECKSUM=a96da1425dcbec094736033a8a416316547f8100ab4b72c31d4824d761d3e133
 
 LABEL golang_version="$VERSION"
-LABEL maintainer="luismmorales@gmail.com"
-LABEL repo="https://github.com/lacion/alpine-golang-buildimage"
+LABEL maintainer="m.zackky@gmail.com"
+LABEL repo="https://github.com/zackijack/alpine-golang-build-image"
 
 RUN apk add --no-cache --update curl \
     grep \
